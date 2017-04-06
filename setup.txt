@@ -1,0 +1,9 @@
+Code Editor --> VS Code
+Source Control --> GitHub
+Text Editor control --> editorconfig
+Package management --> npm Node (npm --> node package manager)
+Security management --> Node Security (to check if there are security problems)
+Development Webserver --> Express
+Easy way to share work in progress --> Local Tunnel
+Automating builds --> npm scripts
+
