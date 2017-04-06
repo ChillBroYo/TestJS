@@ -1,6 +1,6 @@
-var express = require('express');
-var path = require('path');
-var open = require('open');
+import express from 'express';
+import path from 'path';
+import open from 'open';
 
 var port = 3000;
 // using express as a package deployer for developement on local network
