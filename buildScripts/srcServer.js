@@ -16,6 +16,23 @@ noInfo: true,
 publicPath: config.output.publicPath
 }));
 
+app.get('/users', function(req, res){
+  //Hard coding for simplicity
+  res.json([
+    {"id":1, "firstName":"Bob", "lastName":"Smith", "email":"bob@gmail.com"},
+    {"id":2, "firstName":"Tammy", "lastName":"Thorton", "email":"tammy@gmail.com"},
+    {"id":3, "firstName":"John", "lastName":"Fuentes", "email":"john@gmail.com"}
+  ])
+})
+
+app.get('/images', function(req, res){
+  res.json([
+    {"filePath":"https://staticdelivery.nexusmods.com/mods/110/images/74627-0-1459502036.jpg"},
+    {"filePath":"https://saltmarshrunning.com/wp-content/uploads/2014/09/bananasf.jpg"},
+    {"filePath":"https://www.organicfacts.net/wp-content/uploads/2013/06/Pineapple.jpg"}
+  ])
+})
+
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, '../src/index.html'))
 });

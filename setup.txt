@@ -13,4 +13,5 @@ Linting --> ESLint + eslint watch --> a whole level of compile time warnings and
 Testing Framework --> Mocha --> handles the nature of testing code
 Assertion Library --> Chai --> To assert whether something should equal another (like test(2+2).must.equal(4))
 Helper Libraries for testing --> JSDOM --> does not need to visually represent a window, tests by accessing the DOM (Document Object Model of JS)
-Continuous integration server --> Travis CI -->
+Continuous integration server --> Travis CI --> To run online tests whenever a change is commited/pushed
+*** If using Coninuous Integration on Windows use app surveyor
