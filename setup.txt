@@ -5,6 +5,12 @@ Package management --> npm Node (npm --> node package manager) --> for installat
 Security management --> Node Security --> to check to security flaws in packages
 Development Webserver --> Express --> for package deployment to a server
 Easy way to share work in progress --> Local Tunnel --> displays a package deployment to a generated website address (the webserver and localtunnel must be on)
-Automating builds --> npm scripts -->
-Transpiler --> Babel
-
+Automating builds --> npm scripts --> to combine scripts together for easy deployment and checks (makefiles almost)
+Transpiler --> Babel --> In the case that standard JS isn't clean enough or disliked, Babel offers features as well as addons that compile down to JS
+Bundler --> Webpack --> Used to allow easy imports and connections with Babel
+Debugging Transpiled code --> SourceMaps --> since the bundler and transpiler have their own languages, this allows debugging from native js code
+Linting --> ESLint + eslint watch --> a whole level of compile time warnings and/or errors during compilation instead of silent dying
+Testing Framework --> Mocha --> handles the nature of testing code
+Assertion Library --> Chai --> To assert whether something should equal another (like test(2+2).must.equal(4))
+Helper Libraries for testing --> JSDOM --> does not need to visually represent a window, tests by accessing the DOM (Document Object Model of JS)
+Continuous integration server --> Travis CI -->
